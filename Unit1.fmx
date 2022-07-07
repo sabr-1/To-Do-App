@@ -1,0 +1,138 @@
+object ToDoApp: TToDoApp
+  Left = 0
+  Top = 0
+  Caption = 'To Do App'
+  ClientHeight = 503
+  ClientWidth = 677
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Heading1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 32.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    Text = 'Enter Task:'
+    TabOrder = 0
+  end
+  object Task: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    TextSettings.Font.Size = 25.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+    OnKeyDown = TaskKeyDown
+  end
+  object AddButton: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 384.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'ADD'
+    TextSettings.Font.Size = 27.000000000000000000
+    OnClick = AddButtonClick
+    object ToDoList: TListBox
+      Position.X = -352.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 313.000000000000000000
+      Size.Height = 273.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnItemClick = ToDoListItemClick
+      Viewport.Width = 309.000000000000000000
+      Viewport.Height = 269.000000000000000000
+    end
+  end
+  object Credits: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 458.000000000000000000
+    Position.Y = 470.000000000000000000
+    Size.Width = 204.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Developed by: Sameer'
+    TabOrder = 3
+  end
+  object Instructions: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 384.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 238.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    Text = 'Instructions:'
+    TabOrder = 4
+  end
+  object Instructions1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 384.000000000000000000
+    Position.Y = 193.000000000000000000
+    Size.Width = 315.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = '-> Enter the task in text field.'
+    TabOrder = 5
+  end
+  object Instruction2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 384.000000000000000000
+    Position.Y = 193.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = '-> Press Enter key or click ADD '
+    TabOrder = 6
+  end
+  object Instruction3: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 384.000000000000000000
+    Position.Y = 257.000000000000000000
+    Size.Width = 275.000000000000000000
+    Size.Height = 63.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = '-> Click on the task in the list'
+    TabOrder = 7
+  end
+  object Instruction3a: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 410.000000000000000000
+    Position.Y = 290.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'to remove it.'
+    TabOrder = 8
+  end
+  object Instruction2a: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 410.000000000000000000
+    Position.Y = 242.000000000000000000
+    Size.Width = 267.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'button to add task in the list.'
+    TabOrder = 9
+  end
+end
